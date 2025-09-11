@@ -21,6 +21,8 @@ public class ReadingValueFromJsonFile {
 				// if JSON is an array
 				List<Person> persons = objectMapper.readValue(file, new TypeReference<List<Person>>() {
 				});
+				
+//				Person [] persons = objectMapper.readValue(file, Person[].class);
 
 				for (Person person : persons) {
 					System.out.println("ID is: " + person.getId());
